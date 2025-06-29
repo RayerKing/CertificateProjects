@@ -1,8 +1,8 @@
-# FreeCodeCamp
+# freeCodeCamp
 
 ## Responsive Web Design
 
-### Projekt Tribute Page
+### Personal Portfolio Webpage
 
 Tenhle projekt jsem vytvořil jako součást kurzu Responsive Web Design na platformě [freeCodeCamp](https://www.freecodecamp.org/).
 
