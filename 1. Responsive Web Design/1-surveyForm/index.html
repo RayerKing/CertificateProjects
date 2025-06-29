@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  
+  <form id="survey-form">
+    <h1 id="title">Koníčky</h1>
+    <p id="description">Copak děláte za koníčky a jak často se jim věnujete?</p>
+    <fieldset><label id="name-label" for="name">Jméno: <input id="name" type="text" required placeholder="Vaše jméno"></input></label>
+    <label id="email-label" for="email">Email: <input placeholder="email@gmail.com" id="email" type="email" required></input></label>
+    <label id="number-label" for="number">Věk: <input placeholder="50" id="number" type="number" min="5" max="120"></input></label></fieldset>
+    <fieldset>
+      <legend>Jaký typ Vás nejvíce charakterizuje?</legend>
+      <select id="dropdown">
+        <option value="">Vyber</option>
+        <option value="1">Povaleč</option>
+        <option value="2">Sportovec</option>
+        <option value="3">Relaxář</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Jak často se věnujete koníčkům?</legend>
+      <label for="sport"><input id="sport" type="radio" value="mene" name="pravidelnost" checked></input>Méně než 3x týdně</label>
+      <label for="sport2"><input id="sport2" type="radio" value= "vice" name="pravidelnost"></input>Více než 3x týdně</label>
+  
+      
+      
+    </fieldset>
+    <fieldset>
+      <legend>Kterým koníčkům se věnujete?</legend>
+      <label for="balon"><input id="balon" type="checkbox" value="balon">Míčové hry</input></label>
+      <label><input type="checkbox" value="box">Bojové sporty</input></label>
+      <label><input type="checkbox" value="umeni">Umělecké koníčky</input></label>
+      <label><input type="checkbox" value="hry">Počítačové hry</input></label>
+      <label><input type="checkbox" value="ostatni">Jiné</input></label>
+    </fieldset>
+    <fieldset>
+      <label for="textarea">Co dál byste nám chtěli sdělit?<textarea id="textarea"></textarea></label>
+    </fieldset>
+    <input type="submit" id="submit"></input>
+  </form>
+</body>
+</html>

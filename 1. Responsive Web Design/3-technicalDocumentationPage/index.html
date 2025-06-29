@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--=== Pracovní komentář ===-->
+    <!--
+    &lt = <
+    &gt = >
+    &nbsp = pevná mezera ( 4x = Tabulátor)-->
+
+    <nav id="navbar">
+      <header>HTML Dokumentace</header>
+      <ul>
+        <li><a class="nav-link" href="#Úvod_do_HTML">Úvod do HTML</a></li>
+        <li>
+          <a class="nav-link" href="#Struktura_HTML_dokumentu"
+            >Struktura HTML dokumentu</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Textové_elementy">Textové elementy</a>
+        </li>
+        <li><a class="nav-link" href="#Seznamy">Seznamy</a></li>
+        <li><a class="nav-link" href="#Tabulky">Tabulky</a></li>
+        <li><a class="nav-link" href="#Formuláře">Formuláře</a></li>
+        <li>
+          <a class="nav-link" href="#Sémantické_elementy"
+            >Sémantické elementy</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Úvod_do_HTML">
+        <header>Úvod do HTML</header>
+        <p>
+          HTML je značkovací jazyk používaný k vytváření a strukturování obsahu
+          na webových stránkách. Není to programovací jazyk, ale jazyk, který
+          říká prohlížeči, jak má zobrazit jednotlivé části obsahu – například
+          nadpisy, odstavce, obrázky nebo odkazy.
+        </p>
+
+        <p>
+          HTML je základ každé webové stránky. Bez něj by nebylo možné správně
+          uspořádat a zobrazit informace na internetu. Pomocí HTML určujeme, co
+          je nadpis, co je odstavec, co je seznam a jaký text má být klikací
+          odkaz. Umožňuje tak logicky a přehledně strukturovat informace.
+        </p>
+
+        <p>
+          HTML je potřeba k tomu, aby prohlížeče jako Chrome, Firefox nebo
+          Safari věděly, jak obsah zobrazit uživateli. Díky HTML může vývojář
+          vytvářet přehledné, funkční a přístupné weby, které jsou základním
+          kamenem moderního internetu.
+        </p>
+      </section>
+      <section class="main-section" id="Struktura_HTML_dokumentu">
+        <header>Struktura HTML dokumentu</header>
+        <p>
+          Každý HTML dokument má základní strukturu, která říká prohlížeči, jak
+          má stránku zobrazit. Dokument vždy začíná deklarací
+          <code>&lt;!DOCTYPE html&gt;</code>, která určuje typ dokumentu a verzi
+          HTML.
+        </p>
+
+        <p>
+          Hlavní část HTML stránky tvoří párové značky
+          <code>&lt;html&gt;</code> a <code>&lt;/html&gt;</code>. Uvnitř nich se
+          nachází dvě klíčové části: <code>&lt;head&gt;</code> a
+          <code>&lt;body&gt;</code>.
+        </p>
+
+        <p>
+          Element <code>&lt;head&gt;</code> obsahuje tzv. metadata – tedy
+          informace o stránce, které nejsou přímo viditelné uživateli (např.
+          název stránky, odkazy na CSS nebo znakovou sadu).
+        </p>
+
+        <p>
+          Element <code>&lt;body&gt;</code> obsahuje vše, co se skutečně zobrazí
+          na stránce – nadpisy, odstavce, obrázky, formuláře a další prvky.
+        </p>
+        <div class="coding">
+          <p>Jednoduchý příklad základní struktury:</p>
+
+          <code>
+            &lt;!DOCTYPE html&gt;<br />
+            &lt;html lang="cs"&gt;<br />
+              &lt;head&gt;<br />
+                &lt;meta charset="UTF-8"&gt;<br />
+                &lt;title&gt;Moje stránka&lt;/title&gt;<br />
+              &lt;/head&gt;<br />
+              &lt;body&gt;<br />
+                &lt;h1&gt;Ahoj světe&lt;/h1&gt;<br />
+              &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </code>
+        </div>
+      </section>
+      <section class="main-section" id="Textové_elementy">
+        <header>Textové elementy</header>
+        <p>
+          HTML obsahuje řadu značek určených pro práci s textem. Tyto elementy
+          pomáhají nejen vizuálně strukturovat text, ale i určit jeho význam. To
+          je důležité jak pro čtenáře, tak i pro vyhledávače nebo asistivní
+          technologie.
+        </p>
+        <p>
+          Základním stavebním kamenem textu je odstavec, který se zapisuje
+          pomocí značky <code>&lt;p&gt;</code>. Pro nadpisy se používají značky
+          <code>&lt;h1&gt;</code> až <code>&lt;h6&gt;</code>, kde
+          <code>&lt;h1&gt;</code> označuje hlavní nadpis stránky a
+          <code>&lt;h6&gt;</code> nejméně důležitý podnadpis.
+        </p>
+        <p>
+          Chceme-li v textu něco zdůraznit, použijeme značky jako
+          <code>&lt;strong&gt;</code> pro důraz (zpravidla tučné písmo) nebo
+          <code>&lt;em&gt;</code> pro kurzívu. Tyto značky neslouží jen pro
+          vzhled, ale i pro význam – například čtečky obrazovky je interpretují
+          odlišně.
+        </p>
+        <p>
+          Pro zalomení řádku bez začátku nového odstavce slouží značka
+          <code>&lt;br&gt;</code>. Tu využiješ třeba v básních nebo adresách.
+        </p>
+        <p>
+          Když chceš část textu zvýraznit například jako upozornění, můžeš
+          použít značku <code>&lt;mark&gt;</code>, která daný text zvýrazní
+          obvykle žlutým podbarvením.
+        </p>
+      </section>
+      <section class="main-section" id="Seznamy">
+        <header>Seznamy</header>
+        <p>
+          Seznamy jsou v HTML velmi důležité pro přehlednou prezentaci
+          informací. 
+        </p>
+        <p>Existují tři hlavní typy seznamů: 
+            <ul>
+                <li>nečíslovaný
+          (<code>&lt;ul&gt;</code>)</li>
+        <li>číslovaný (<code>&lt;ol&gt;</code>)</li>
+        <li>seznam popisný (<code>&lt;dl&gt;</code>)</li>
+        </ul>
+            
+          </p>
+        <p>
+          Nečíslované seznamy se používají tam, kde pořadí položek není důležité
+          – například pro výčet vlastností. Naopak číslované seznamy se hodí
+          tam, kde záleží na pořadí, například pro postupy nebo návody. Popisné
+          seznamy se pak využívají pro párové zobrazení termínu a jeho
+          vysvětlení, například ve slovnících.
+        </p>
+        <p>
+          Každý prvek seznamu je zapsán pomocí značky
+          <code>&lt;li&gt;</code> (list item). U popisných seznamů se místo toho
+          používají značky <code>&lt;dt&gt;</code> (definovaný termín) a
+          <code>&lt;dd&gt;</code> (definice termínu).
+        </p>
+        <div class="coding">
+          <p>Ukázka nečíslovaného seznamu:</p>
+          <code>
+            &lt;ul&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Jablko&lt;/li&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Hruška&lt;/li&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Banán&lt;/li&gt;<br />
+            &lt;/ul&gt;
+          </code>
+        </div>
+      </section>
+      <section class="main-section" id="Tabulky">
+        <header>Tabulky</header>
+        <p>
+          Tabulky v HTML slouží k přehlednému zobrazení dat v řádcích a
+          sloupcích. Používají se pro rozvrhy, výsledkové listiny, srovnávací
+          tabulky nebo finanční přehledy. Základem tabulky je značka
+          <code>&lt;table&gt;</code>.
+        </p>
+
+        <p>
+          Pro vytvoření řádků se používá značka <code>&lt;tr&gt;</code> (table
+          row). Každý řádek obsahuje buňky, které jsou buď datové
+          <code>&lt;td&gt;</code>, nebo záhlaví <code>&lt;th&gt;</code>. Záhlaví
+          se obvykle používá v prvním řádku k označení sloupců a bývá tučně a
+          zarovnané na střed.
+        </p>
+
+        <p>
+          Pro srozumitelnější strukturu tabulky je možné využít i značky
+          <code>&lt;thead&gt;</code> (hlavička),
+          <code>&lt;tbody&gt;</code> (tělo) a
+          <code>&lt;tfoot&gt;</code> (zápatí). Tyto značky nejsou povinné, ale
+          pomáhají kód zpřehlednit.
+        </p>
+        <div class="coding">
+          <p>Ukázka tabulky se záhlavím a řádky:</p>
+          <code>
+            &lt;table&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Jméno&lt;/th&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Věk&lt;/th&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Město&lt;/th&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Anna&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;28&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Praha&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jan&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;35&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Brno&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;<br />
+            &lt;/table&gt;
+          </code>
+        </div>
+      </section>
+      <section class="main-section" id="Formuláře">
+        <header>Formuláře</header>
+        <p>
+  Formuláře v HTML slouží ke sběru dat od uživatelů. Umožňují návštěvníkům zadávat informace, jako jsou jméno, e-mail, heslo, komentáře nebo výběry z možností.
+</p>
+<p>
+  Každý formulář začíná tagem <code>&lt;form&gt;</code>, který může obsahovat různé vstupní prvky jako:
+</p>
+<ul>
+  <li><code>&lt;input type="text"&gt;</code> – pro jednorázový textový vstup</li>
+  <li><code>&lt;textarea&gt;</code> – pro víceřádkový text (např. komentáře)</li>
+  <li><code>&lt;select&gt;</code> – pro výběr z možností</li>
+</ul>
+        <div class="coding">
+  <p>Ukázka formuláře:</p>
+  <code>
+    &lt;form&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot;&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea rows=&quot;3&quot;&gt;&lt;/textarea&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Možnost 1&lt;/option&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Možnost 2&lt;/option&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br>
+    &lt;/form&gt;
+  </code>
+</div>
+
+      </section>
+      <section class="main-section" id="Sémantické_elementy">
+  <header>Sémantické elementy</header>
+
+  <p>
+    Sémantické elementy v HTML jsou takové značky, které svým názvem jasně určují význam obsahu, který obalují. Pomáhají lépe strukturovat web nejen pro lidi, ale i pro vyhledávače nebo čtečky obrazovky.
+  </p>
+
+  <p>
+    Místo běžného <code>&lt;div&gt;</code>, který nemá žádný význam sám o sobě, se používají například <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code> a další.
+  </p>
+
+  <p>
+    Například <code>&lt;nav&gt;</code> označuje navigaci stránky, <code>&lt;article&gt;</code> samostatný kus obsahu (např. článek) a <code>&lt;footer&gt;</code> patičku stránky. Díky těmto prvkům je kód přehlednější, srozumitelnější a přístupnější.
+  </p>
+
+  
+
+  <div class="coding">
+    <p>Příklad jednoduché struktury se sémantickými značkami:</p>
+    <code>
+      &lt;header&gt;Hlavička stránky&lt;/header&gt;<br>
+      &lt;nav&gt;Hlavní menu&lt;/nav&gt;<br>
+      &lt;main&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;Článek&lt;/article&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;Sekce obsahu&lt;/section&gt;<br>
+      &lt;/main&gt;<br>
+      &lt;footer&gt;Patička stránky&lt;/footer&gt;
+    </code>
+  </div>
+</section>
+
+    </main>
+  </body>
+</html>
