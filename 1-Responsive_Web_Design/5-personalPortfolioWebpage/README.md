@@ -6,4 +6,7 @@
 
 Tenhle projekt jsem vytvořil jako součást kurzu Responsive Web Design na platformě [freeCodeCamp](https://www.freecodecamp.org/).
 
-Projekt splňuje všechny požadavky, které freeCodeCamp ve svém kurzu stanovil.  
+Tento projekt je odlišný oproti projektu odevzdaném ve freeCodeCamp. 
+
+Dodatek: Projekt není ve finální podobě – pár věcí tu ještě plánuji doladit a rozšířit.
+
