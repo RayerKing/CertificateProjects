@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  background: #0f1220;
+  color: #e7e9ff;
+  padding: 24px;
+}
+
+
+section.palidrome {
+  width: min(720px, 96vw);
+  background: #171a2b;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  text-align: center; 
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(22px, 3.6vw, 30px);
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 16px;
+}
+
+.vstup, .vysvetleni { width: 100%; }
+
+.vstup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.vstup label {
+  display: block;
+  margin-bottom: 2px;
+  color: #cdd3ff;
+}
+
+
+#text-input {
+  display: block;
+  width: 100%;
+  max-width: 680px;      
+  margin-inline: auto;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: #121528;
+  color: #e7e9ff;
+  text-align: center;         
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+#text-input::placeholder { text-align: center; opacity: .7; }
+#text-input:focus-visible { border-color: #6c8eff; box-shadow: 0 0 0 4px rgba(108,142,255,.18); }
+
+
+#check-btn {
+  display: inline-block;
+  align-self: center;
+  margin-top: 10px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #0b1022;
+  background: linear-gradient(135deg, #6c8eff, #3de0c2);
+  transition: filter .15s, transform .1s;
+}
+
+
+#result {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #e7e9ff;
+  text-align: center;
+  min-height: 1.5em; 
+}
+#result.good { color: #3de0c2; } 
+#result.bad  { color: #ff6b6b; }  
+
+
+.vysvetleni p {
+  margin: 0;
+  color: #a5abcf;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+@media (max-width: 380px) {
+  section.palidrome { padding: 16px; }
+  #text-input, #check-btn { font-size: 14px; }
+}
+
+
+@media (min-width: 600px) {
+  section.palidrome { padding: 28px; }
+  #text-input { max-width: 720px; } 
+  h1 { font-size: clamp(24px, 3.2vw, 32px); }
+}
+
